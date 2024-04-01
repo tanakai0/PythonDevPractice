@@ -50,6 +50,7 @@ VSCode extensions;
 
 ## pre-commit
 - [pre-commit で Python コードをキレイに管理してみた](https://zenn.dev/fikastudio/articles/73c226000f9a0a)
+- [pre-commit + Ruff](https://zenn.dev/nowa0402/articles/79aaeb8db5731c)
 
 
 # To do
