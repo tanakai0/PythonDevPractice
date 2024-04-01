@@ -48,6 +48,8 @@ VSCode extensions;
 - [Ruff](https://github.com/astral-sh/ruff)
 - [Configuring Ruff（default はかなり black に近い）](https://docs.astral.sh/ruff/configuration/)
 
+## pre-commit
+- [pre-commit で Python コードをキレイに管理してみた](https://zenn.dev/fikastudio/articles/73c226000f9a0a)
 
 
 # To do
