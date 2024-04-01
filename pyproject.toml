@@ -20,6 +20,9 @@ build-backend = "hatchling.build"
 managed = true
 dev-dependencies = [
     "pytest>=8.1.1",
+    "ruff>=0.3.4",
+    "mypy>=1.9.0",
+    "pre-commit>=3.7.0",
 ]
 
 [tool.hatch.metadata]
@@ -27,3 +30,103 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pythondevpractice"]
+
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+# By default, Ruff will also skip any files that are omitted via .ignore,
+# .gitignore, .git/info/exclude, and global gitignore files.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+extend-include = ["*.ipynb"]
+
+# Same as Black.
+line-length = 120
+indent-width = 4
+
+# Assume Python 3.8
+target-version = "py38"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E4", "E7", "E9", "F", "I"]
+
+ignore = ["ANN", "ERA001", "T201", "FBT003", "G004", "PLR0913", "RUF100", "E741"]
+# print (T201)
+# commented-out-code (ERA001)
+# flake8-annotations (ANN)
+# boolean-positional-value-in-call (FBT003)
+# logging-f-string (G004)
+# too-many-arguments (PLR0913)
+# unused-noqa (RUF100)
+# ambiguous-variable-name (E741)
+
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+# convention = "numpy"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+# For example, in docstring,
+# >>> a=b+1
+# is formatted to
+# >>> a = b + 1
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = true
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+

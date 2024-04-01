@@ -36,6 +36,8 @@ certifi==2024.2.2
     # via requests
 cffi==1.16.0
     # via argon2-cffi-bindings
+cfgv==3.4.0
+    # via pre-commit
 charset-normalizer==3.3.2
     # via requests
 colorama==0.4.6
@@ -49,6 +51,8 @@ decorator==5.1.1
     # via ipython
 defusedxml==0.7.1
     # via nbconvert
+distlib==0.3.8
+    # via virtualenv
 exceptiongroup==1.2.0
     # via anyio
     # via ipython
@@ -57,6 +61,8 @@ executing==2.0.1
     # via stack-data
 fastjsonschema==2.19.1
     # via nbformat
+filelock==3.13.3
+    # via virtualenv
 fqdn==1.5.1
     # via jsonschema
 h11==0.14.0
@@ -65,6 +71,8 @@ httpcore==1.0.4
     # via httpx
 httpx==0.27.0
     # via jupyterlab
+identify==2.5.35
+    # via pre-commit
 idna==3.6
     # via anyio
     # via httpx
@@ -132,6 +140,9 @@ matplotlib-inline==0.1.6
     # via ipython
 mistune==3.0.2
     # via nbconvert
+mypy==1.9.0
+mypy-extensions==1.0.0
+    # via mypy
 nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.3
@@ -142,6 +153,8 @@ nbformat==5.10.3
     # via nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
+nodeenv==1.8.0
+    # via pre-commit
 notebook-shim==0.2.4
     # via jupyterlab
 numpy==1.26.4
@@ -161,8 +174,10 @@ parso==0.8.3
     # via jedi
 platformdirs==4.2.0
     # via jupyter-core
+    # via virtualenv
 pluggy==1.4.0
     # via pytest
+pre-commit==3.7.0
 prometheus-client==0.20.0
     # via jupyter-server
 prompt-toolkit==3.0.43
@@ -190,6 +205,7 @@ pywinpty==2.0.13
     # via terminado
 pyyaml==6.0.1
     # via jupyter-events
+    # via pre-commit
 pyzmq==25.1.2
     # via ipykernel
     # via jupyter-client
@@ -209,8 +225,11 @@ rfc3986-validator==0.1.1
 rpds-py==0.18.0
     # via jsonschema
     # via referencing
+ruff==0.3.4
 send2trash==1.8.2
     # via jupyter-server
+setuptools==69.2.0
+    # via nodeenv
 six==1.16.0
     # via asttokens
     # via bleach
@@ -230,6 +249,7 @@ tinycss2==1.2.1
     # via nbconvert
 tomli==2.0.1
     # via jupyterlab
+    # via mypy
     # via pytest
 tornado==6.4
     # via ipykernel
@@ -255,10 +275,13 @@ types-python-dateutil==2.9.0.20240316
 typing-extensions==4.10.0
     # via anyio
     # via async-lru
+    # via mypy
 uri-template==1.3.0
     # via jsonschema
 urllib3==2.2.1
     # via requests
+virtualenv==20.25.1
+    # via pre-commit
 wcwidth==0.2.13
     # via prompt-toolkit
 webcolors==1.13
