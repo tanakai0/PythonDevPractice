@@ -52,12 +52,16 @@ VSCode extensions;
 - [pre-commit で Python コードをキレイに管理してみた](https://zenn.dev/fikastudio/articles/73c226000f9a0a)
 - [pre-commit + Ruff](https://zenn.dev/nowa0402/articles/79aaeb8db5731c)
 
+## project
+- [Python プロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)
+
 
 # To do
 https://sogo.dev/posts/2023/11/rye-with-docker
 https://zenn.dev/daifukuninja/articles/f2997585867f7b
 https://zenn.dev/tk_resilie/articles/python_my_best_project  
-precommit  
 pytest  
 bandit  
 logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4
+
+mypy が ipynb を見ない。 pre-commit 時も見れていない。
