@@ -10,8 +10,9 @@ Package manager: Rye (uv) by Rust
 Linter: Ruff by Rust  
 Formatter: Ruff by Rust  
 Type Checking: Pylance in GUI & mypy in CUI  
-Python docstring style: Numpy style  
-
+Python docstring style: Numpy style 
+Test process: pytest  
+Container virtualization: Docker & DevContainer in VSCode
 
 VSCode extensions;
 - ms-python.python
@@ -25,6 +26,11 @@ VSCode extensions;
 
 
 # Reference
+
+##
+- [Setting up Git & Authenticating with GitHub from Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+- [Git まとめ](https://qiita.com/gold-kou/items/7f6a3b46e2781b0dd4a0)
+
 
 ## VSCode
 - [json 設定ファイルの優先度について](https://qiita.com/tabo_dev/items/df7e5b1b0d7c336af124)
@@ -55,6 +61,8 @@ VSCode extensions;
 ## project
 - [Python プロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)
 
+## Docker
+- [Docker 概要](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
 
 # To do
 https://sogo.dev/posts/2023/11/rye-with-docker
