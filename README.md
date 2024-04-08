@@ -2,7 +2,7 @@
 
 Practice of Python development environment.
 
-# How to setup
+# Setup
 1. ```>>> git clone [this url]```
 2. Install recommended extensions of VSCode (written in extensions.json)
 3. ```>>> rye sync```
