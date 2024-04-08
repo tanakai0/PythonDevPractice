@@ -5,4 +5,8 @@
     "autoDocstring.includeName": false,
     "autoDocstring.startOnNewLine": true,
     "python.analysis.typeCheckingMode": "basic",
+    "cSpell.words": [
+        "arange",
+    ],
+    "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],  // ignore a part of Japanese on spell checking
 }
