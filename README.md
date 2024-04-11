@@ -50,6 +50,7 @@ VSCode extensions;
 ## Python
 - [Python](https://www.python.org/)
 - [Status of Python versions](https://devguide.python.org/versions/)
+- [Pythonの相対パスimportを理解する \#Python \- Qiita](https://qiita.com/u943425f/items/bd94a30b52c9296e942d)
 
 ## Rust
 - [Installing Rust for Windows](https://www.rust-lang.org/tools/install)
@@ -75,6 +76,10 @@ VSCode extensions;
 ## Docker
 - [Docker 概要](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
 
+# Pytest
+- [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
+- [pytest ヘビー🐍ユーザーへの第一歩 \- エムスリーテックブログ](https://www.m3tech.blog/entry/pytest-summary)
+
 # To do
 https://sogo.dev/posts/2023/11/rye-with-docker
 https://zenn.dev/daifukuninja/articles/f2997585867f7b
@@ -84,3 +89,9 @@ bandit
 logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4  
 
 mypy が ipynb を見ない。 pre-commit 時も見れていない。
+
+
+# Memo
+- Rye で開発用にライブラリを追加する場合は、```>>> rye add --dev library_name```
+- ```>>> pytest``` は test\_\*.py か \*\_test.py というファイル内の，test\_\* 関数や Test* クラスをテストする
+- Add a local dependency: ```>>> rye add packagename --path path/to/packagename```
