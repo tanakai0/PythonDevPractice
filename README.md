@@ -3,6 +3,7 @@
 Practice of Python development environment.
 
 # Setup
+0. Install VSCode, Python, Rust, and Rye in that order. It is essential to install Rust before Rye. If Rye is installed before Rust on Windows, you should delete the Users/.rye folders.
 1. ```>>> git clone [this url]```
 2. Install recommended extensions of VSCode (written in extensions.json)
 3. ```>>> rye sync```
@@ -50,10 +51,11 @@ VSCode extensions;
 - [Python](https://www.python.org/)
 - [Status of Python versions](https://devguide.python.org/versions/)
 
+## Rust
+- [Installing Rust for Windows](https://www.rust-lang.org/tools/install)
 
 ## Rye/uv
 - [Rye](https://github.com/astral-sh/rye)
-- [Installing Rust for Windows](https://www.rust-lang.org/tools/install)
 - [Installing Rye for Windows](https://rye-up.com/guide/installation/#installing-rye)
 - [【Pythonのパッケージ管理に悩む方へ】パッケージ管理ツールRyeを使ってみた](https://dev.classmethod.jp/articles/get-start-rye-python/)
 - [pythonパッケージ管理ツールryeを使う - 肉球でキーボード](https://nsakki55.hatenablog.com/entry/2023/05/29/013658)
