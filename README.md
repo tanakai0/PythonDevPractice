@@ -10,6 +10,7 @@ Practice of Python development environment.
 4. ```>>> rye run pre-commit install``` (If you use pre-commit)
 
 # Structure
+## Methods
 Version control system: Git  
 Source-code editor: VSCode  
 Language: Python  
@@ -22,7 +23,7 @@ Python docstring style: Numpy style
 Test process: pytest  
 Container virtualization: Docker & DevContainer in VSCode
 
-VSCode extensions;
+### VSCode extensions
 - ms-python.python
 - ms-toolsai.jupyter
 - ms-python.vscode-pylance
@@ -33,6 +34,29 @@ VSCode extensions;
 - usernamehw.errorlens
 - streetsidesoftware.code-spell-checker
 - mhutchie.git-graph
+
+## Folder hierarchy
+Package programs: /src/package_name  
+Test programs: /tests  
+Scripts for analysis: /experiments  
+
+# To do
+https://sogo.dev/posts/2023/11/rye-with-docker
+https://zenn.dev/daifukuninja/articles/f2997585867f7b
+https://zenn.dev/tk_resilie/articles/python_my_best_project  
+bandit  
+logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4  
+
+mypy が ipynb を見ない。 pre-commit 時も見れていない。
+
+
+# Memo
+- Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
+- Add a library for development: ```>>> rye add --dev library_name```
+- ```>>> pytest``` search functions titled as test\_\* and classes titled as Test* in test\_\*.py or \*\_test.py. 
+- Add a local dependency by Rye: ```>>> rye add packagename --path path/to/packagename```
+- Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```
+
 
 # Reference
 
@@ -80,18 +104,3 @@ VSCode extensions;
 - [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
 - [pytest ヘビー🐍ユーザーへの第一歩 \- エムスリーテックブログ](https://www.m3tech.blog/entry/pytest-summary)
 
-# To do
-https://sogo.dev/posts/2023/11/rye-with-docker
-https://zenn.dev/daifukuninja/articles/f2997585867f7b
-https://zenn.dev/tk_resilie/articles/python_my_best_project  
-pytest  
-bandit  
-logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4  
-
-mypy が ipynb を見ない。 pre-commit 時も見れていない。
-
-
-# Memo
-- Rye で開発用にライブラリを追加する場合は、```>>> rye add --dev library_name```
-- ```>>> pytest``` は test\_\*.py か \*\_test.py というファイル内の，test\_\* 関数や Test* クラスをテストする
-- Add a local dependency: ```>>> rye add packagename --path path/to/packagename```

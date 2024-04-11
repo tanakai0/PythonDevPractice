@@ -35,7 +35,6 @@ identify==2.5.35
 iniconfig==2.0.0
     # via pytest
 ipykernel==6.29.4
-    # via pythondevpractice
 ipython==8.23.0
     # via ipykernel
 jedi==0.19.1

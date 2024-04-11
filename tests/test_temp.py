@@ -1,4 +1,3 @@
-
 def test_answer():
     # assert 3 == 5  # Assertion
     assert 1 + 2 == 3
@@ -8,7 +7,7 @@ def test_answer():
 class TestClass:
     def test_one(self):
         x = "this"
-        assert "h" in x
+        assert "h" in x, "h is not in str"
 
     def test_two(self):
         x = "this"

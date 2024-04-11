@@ -7,7 +7,6 @@ authors = [
 ]
 dependencies = [
     "numpy>=1.26.4",
-    "ipykernel>=6.29.4",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -23,13 +22,14 @@ dev-dependencies = [
     "ruff>=0.3.4",
     "mypy>=1.9.0",
     "pre-commit>=3.7.0",
+    "ipykernel>=6.29.4",
 ]
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pythondevpractice"]
+packages = ["src/PythonDevPractice"]
 
 
 [tool.ruff]

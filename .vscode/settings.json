@@ -7,6 +7,7 @@
     "python.analysis.typeCheckingMode": "basic",
     "cSpell.words": [
         "arange",
+        "pytest"
     ],
     "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],  // ignore a part of Japanese on spell checking
 }
