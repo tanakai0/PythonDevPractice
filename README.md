@@ -19,7 +19,7 @@ Spell check: Code Spell Checker in VSCode
 Linter: Ruff by Rust  
 Formatter: Ruff by Rust  
 Type Checking: Pylance in VSCode & mypy in CUI  
-Python docstring style: Numpy style 
+Python docstring style: Numpy style  
 Test process: pytest  
 Container virtualization: Docker & DevContainer in VSCode
 
@@ -36,16 +36,18 @@ Container virtualization: Docker & DevContainer in VSCode
 - mhutchie.git-graph
 
 ## Folder hierarchy
-Package programs: /src/package_name  
+Package programs: /package_name  
 Test programs: /tests  
 Scripts for analysis: /experiments  
+VSCode extensions and settings: .vscode
 
 # To do
 https://sogo.dev/posts/2023/11/rye-with-docker
 https://zenn.dev/daifukuninja/articles/f2997585867f7b
 https://zenn.dev/tk_resilie/articles/python_my_best_project  
 bandit  
-logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4  
+logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4 
+launch.json 
 
 mypy が ipynb を見ない。 pre-commit 時も見れていない。  
 /src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
