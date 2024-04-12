@@ -60,7 +60,8 @@ mypy が ipynb を見ない。 pre-commit 時も見れていない。
 - Add a library for development: ```>>> rye add --dev library_name```
 - ```>>> pytest``` search functions titled as test\_\* and classes titled as Test* in test\_\*.py or \*\_test.py. 
 - Add a local dependency by Rye: ```>>> rye add packagename --path path/to/packagename```
-- Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```
+- Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```  
+- tests/conftest.py にはテストで使う関数やテスト用データを fixture として格納しておく。conftest.py という名前のファイルに掛かれた fixture は、フォルダ階層が conftest.py と同じもしくはより深い場所で import せずに使えるようになる。  
 
 
 # Reference
