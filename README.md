@@ -42,15 +42,13 @@ Scripts for analysis: /experiments
 VSCode extensions and settings: .vscode
 
 # To do
-https://sogo.dev/posts/2023/11/rye-with-docker
-https://zenn.dev/daifukuninja/articles/f2997585867f7b
-https://zenn.dev/tk_resilie/articles/python_my_best_project  
-bandit  
-logging: https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4 
-launch.json 
+- https://sogo.dev/posts/2023/11/rye-with-docker
+- https://zenn.dev/daifukuninja/articles/f2997585867f7b
+- https://zenn.dev/tk_resilie/articles/python_my_best_project  
+- bandit  
 
-mypy が ipynb を見ない。 pre-commit 時も見れていない。  
-/src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
+- mypy が ipynb を見ない。 pre-commit 時も見れていない。  
+- /src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
 
 
 
@@ -110,3 +108,6 @@ mypy が ipynb を見ない。 pre-commit 時も見れていない。
 - [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
 - [pytest ヘビー🐍ユーザーへの第一歩 \- エムスリーテックブログ](https://www.m3tech.blog/entry/pytest-summary)
 
+# Logging
+- [Logging HOWTO — Python 3\.12\.3 documentation](https://docs.python.org/3/howto/logging.html)  
+- [logging入門 \#Python \- Qiita](https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4)  
