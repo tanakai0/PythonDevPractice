@@ -15,7 +15,8 @@ Version control system: Git
 Source-code editor: VSCode  
 Language: Python  
 Package manager: Rye (uv) by Rust  
-Spell check: Code Spell Checker in VSCode
+Spell check: Code Spell Checker in VSCode  
+Logging: logging package in Python  
 Linter: Ruff by Rust  
 Formatter: Ruff by Rust  
 Type Checking: Pylance in VSCode & mypy in CUI  
@@ -47,19 +48,20 @@ VSCode extensions and settings: .vscode
 - https://zenn.dev/tk_resilie/articles/python_my_best_project  
 - bandit  
 
-- mypy が ipynb を見ない。 pre-commit 時も見れていない。  
-- /src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
 
 
-
-
-# Memo
+# Guide
 - Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
 - Add a library for development: ```>>> rye add --dev library_name```
 - ```>>> pytest``` search functions titled as test\_\* and classes titled as Test* in test\_\*.py or \*\_test.py. 
 - Add a local dependency by Rye: ```>>> rye add packagename --path path/to/packagename```
 - Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```  
 - tests/conftest.py にはテストで使う関数やテスト用データを fixture として格納しておく。conftest.py という名前のファイルに掛かれた fixture は、フォルダ階層が conftest.py と同じもしくはより深い場所で import せずに使えるようになる。  
+
+# Troubleshooting
+- mypy が ipynb を見ない。 pre-commit 時も見れていない。  
+- /src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
+- README.md は行末の空白で改行しているため，エディタの設定によっては勝手に行末の空白が削除されてしまうことに注意
 
 
 # Reference

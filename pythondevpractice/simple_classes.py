@@ -1,4 +1,8 @@
+import logging
+
 from pythondevpractice import simple_functions
+
+logger = logging.getLogger(__name__)
 
 
 class Human:
@@ -6,6 +10,7 @@ class Human:
         self.name = name
         self.years = years
         self.height = height
+        logger.info("Human instance is successfully generated.")
 
     def print_info(self):
         """
@@ -19,7 +24,8 @@ class Human:
         """
         print(f"{self.name}, {self.years} years-old, {self.height} cm")
 
-    def gets_older(self, year):
+    def gets_older(self, year: int):
+        logger.debug(f"year = {year}.")
         self.years = simple_functions.plus(self.years, year)
 
 
