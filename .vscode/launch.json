@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Test of Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }, 
+
+        {
+            "name": "Python: Step Test of Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,  // このオプションをtrueにすると、ユーザーのコードのみがステップ実行の対象となります
+            "stopOnEntry": true  // プログラムの開始時に自動的にブレークポイントを設定します
+        }
+    ]
+}
