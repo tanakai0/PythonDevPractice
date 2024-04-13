@@ -44,11 +44,10 @@ VSCode extensions and settings: .vscode
 
 # To do
 - https://sogo.dev/posts/2023/11/rye-with-docker
-- https://zenn.dev/daifukuninja/articles/f2997585867f7b
-- https://zenn.dev/tk_resilie/articles/python_my_best_project  
+- https://zenn.dev/daifukuninja/articles/f2997585867f7b  
+- [【Rye \+ uv \+ Ruff】Docker で VS Code の Dev Container 上に快適な Python 環境を構築する](https://zenn.dev/dena/articles/rye_python_in_devcontainer)  
 - bandit  
-
-
+- rope  
 
 # Guide
 - Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
@@ -56,12 +55,12 @@ VSCode extensions and settings: .vscode
 - ```>>> pytest``` search functions titled as test\_\* and classes titled as Test* in test\_\*.py or \*\_test.py. 
 - Add a local dependency by Rye: ```>>> rye add packagename --path path/to/packagename```
 - Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```  
-- tests/conftest.py にはテストで使う関数やテスト用データを fixture として格納しておく。conftest.py という名前のファイルに掛かれた fixture は、フォルダ階層が conftest.py と同じもしくはより深い場所で import せずに使えるようになる。  
+- Store functions and test data used in tests as fixtures in tests/conftest.py. Fixtures defined in a conftest.py file can be used without import in files within the same or deeper directory levels.  
 
 # Troubleshooting
-- mypy が ipynb を見ない。 pre-commit 時も見れていない。  
-- /src/packagename という構造だと、pip install -e もしくは rye add packagename -- path ./src/packagename 見たいにすることで本番のパッケージ環境を模倣できると思ったが、VSCode がなぜか src/ を PYTHONPATH に追加してしまい、結果として、src/packagename を直接参照してしまう。そこで、パッケージはプロジェクトのルート直下 /packagename に置くことにした。  
-- README.md は行末の空白で改行しているため，エディタの設定によっては勝手に行末の空白が削除されてしまうことに注意
+- Mypy does not check .ipynb files. It is neither to check them during pre-commit.  
+- Initially, I thought using a /src/packagename structure would allow for mimicking the production package environment by using pip install -e or rye add packagename --path ./src/packagename. However, VSCode unexpectedly adds src/ to the PYTHONPATH, which results in direct references to src/packagename. Consequently, I decided to place the package directly under the project root at /packagename.   
+- Be aware that README.md uses trailing whitespace for line breaks. Depending on the editor settings, these trailing spaces might be automatically removed.  
 
 
 # Reference
@@ -102,6 +101,7 @@ VSCode extensions and settings: .vscode
 
 ## project
 - [Python プロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)
+- [\[2023年最新版:rye対応\]Python案件で汎用的に使えるモダンなプロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)  
 
 ## Docker
 - [Docker 概要](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
