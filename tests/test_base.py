@@ -4,8 +4,9 @@ import sys
 
 import pytest
 
-# from pythondevpractice import simple_functions
-import pythondevpractice.simple_functions as simple_functions
+from pythondevpractice import simple_functions
+
+# import pythondevpractice.simple_functions as simple_functions
 
 print("sys.path:")
 pprint.pprint(sys.path)

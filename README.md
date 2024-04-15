@@ -58,6 +58,8 @@ VSCode extensions and settings: .vscode
 - Store functions and test data used in tests as fixtures in tests/conftest.py. Fixtures defined in a conftest.py file can be used without import in files within the same or deeper directory levels.  
 
 # Troubleshooting
+- To ensure the correct syntax analysis in VSCode for `import packagename` from the `tests` folder, I added `${workspaceFolder}` to the `python.analysis.extraPaths` in the VSCode's `settings.json`. 
+- If you encounter a `ModuleNotFoundError: No module named 'pythondevpractice'`, execute them like `python -m tests.test_base` to force Python to run the scripts with the project's root directory in its path. Additionally, using `rye add packagename --path .` may add the project's root to the path persistently.  
 - Mypy does not check .ipynb files. It is neither to check them during pre-commit.  
 - Initially, I thought using a /src/packagename structure would allow for mimicking the production package environment by using pip install -e or rye add packagename --path ./src/packagename. However, VSCode unexpectedly adds src/ to the PYTHONPATH, which results in direct references to src/packagename. Consequently, I decided to place the package directly under the project root at /packagename.   
 - Be aware that README.md uses trailing whitespace for line breaks. Depending on the editor settings, these trailing spaces might be automatically removed.  

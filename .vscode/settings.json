@@ -1,4 +1,8 @@
 {
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ], 
+    
     "extensions.ignoreRecommendations": false,
 
     "autoDocstring.docstringFormat": "numpy",
