@@ -26,11 +26,14 @@ dev-dependencies = [
 ]
 
 [tool.rye.scripts]
+# format Python codes
 fmt = { chain = ["ruff format ./pythondevpractice ./tests ./experiments"]}
+# Lint Python codes
 lint = { chain = [
     "ruff check --fix ./pythondevpractice ./tests ./experiments",
     "mypy ./pythondevpractice ./tests ./experiments"
 ]}
+# Test Python codes
 test = { chain = ["pytest ./tests"] }
 
 [tool.hatch.metadata]
