@@ -3,7 +3,7 @@
     
     "python.analysis.extraPaths": [
         "${workspaceFolder}"
-    ], 
+    ],
     
     "extensions.ignoreRecommendations": false,
 
@@ -17,4 +17,15 @@
         "pythondevpractice"
     ],
     "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],  // ignore a part of Japanese on spell checking
+
+    "ruff.lint.args": ["--config=pyproject.toml",],
+    "ruff.format.args": ["--config=pyproject.toml"],
+
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "always",
+            "source.organizeImports": "always"
+        }
+    },
+
 }

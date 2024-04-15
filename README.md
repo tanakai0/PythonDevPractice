@@ -17,24 +17,22 @@ Language: Python
 Package manager: Rye (uv) by Rust  
 Spell check: Code Spell Checker in VSCode  
 Logging: logging package in Python  
-Linter: Ruff by Rust  
-Formatter: Ruff by Rust  
-Type Checking: Pylance in VSCode & mypy in CUI  
+Linter: Ruff  (CUI/VSCode)
+Formatter: Ruff  (CUI/VSCode)
+Type Checking: Pylance in VSCode, mypy in CUI  
 Python docstring style: Numpy style  
 Test process: pytest  
 Container virtualization: Docker & DevContainer in VSCode
 
 ### VSCode extensions
 - ms-python.python
-- ms-toolsai.jupyter
-- ms-python.vscode-pylance
-- njpwerner.autodocstring
-- ms-azuretools.vscode-docker
-- ms-vscode-remote.remote-containers
-- sdras.night-owl
-- usernamehw.errorlens
-- streetsidesoftware.code-spell-checker
-- mhutchie.git-graph
+- ms-toolsai.jupyter  
+- njpwerner.autodocstring  
+- charliermarsh.ruff  
+- ms-python.vscode-pylance  
+- ms-azuretools.vscode-docker  
+- ms-vscode-remote.remote-containers  
+- streetsidesoftware.code-spell-checker  
 
 ## Folder hierarchy
 Package programs: /package_name  
@@ -90,13 +88,13 @@ VSCode extensions and settings: .vscode
 ## Rust
 - [Installing Rust for Windows](https://www.rust-lang.org/tools/install)
 
-## Rye/uv
+## Rye/uv in Rust
 - [Rye](https://github.com/astral-sh/rye)
 - [Installing Rye for Windows](https://rye-up.com/guide/installation/#installing-rye)
 - [【Pythonのパッケージ管理に悩む方へ】パッケージ管理ツールRyeを使ってみた](https://dev.classmethod.jp/articles/get-start-rye-python/)
 - [pythonパッケージ管理ツールryeを使う - 肉球でキーボード](https://nsakki55.hatenablog.com/entry/2023/05/29/013658)
 
-## Ruff
+## Ruff in Rust
 - [Ruff](https://github.com/astral-sh/ruff)
 - [Configuring Ruff（default はかなり black に近い）](https://docs.astral.sh/ruff/configuration/)
 
