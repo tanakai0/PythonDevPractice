@@ -1,5 +1,8 @@
 import logging
 
+import numpy as np
+
+a = np.arange(10)
 logger = logging.getLogger(__name__)
 
 

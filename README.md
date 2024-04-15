@@ -58,6 +58,7 @@ VSCode extensions and settings: .vscode
 - Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```  
 - Store functions and test data used in tests as fixtures in tests/conftest.py. Fixtures defined in a conftest.py file can be used without import in files within the same or deeper directory levels.  
 - rye scripts is prepared in [tool.rye.scripts] in pyproject.html. ```>>> rye fmt```, ```>>> rye lint```, and ```>>> rye test``` can be used.
+- Level in logging: DEBUG < INFO < WARNING < ERROR < CRITICAL
 
 # Troubleshooting
 - To ensure the correct syntax analysis in VSCode for `import packagename` from the `tests` folder, I added `${workspaceFolder}` to the `python.analysis.extraPaths` in the VSCode's `settings.json`. 
