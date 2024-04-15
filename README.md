@@ -46,8 +46,11 @@ VSCode extensions and settings: .vscode
 - https://sogo.dev/posts/2023/11/rye-with-docker
 - https://zenn.dev/daifukuninja/articles/f2997585867f7b  
 - [【Rye \+ uv \+ Ruff】Docker で VS Code の Dev Container 上に快適な Python 環境を構築する](https://zenn.dev/dena/articles/rye_python_in_devcontainer)  
+- [VSCode と devcontainer で始める開発環境構築 \#Docker \- Qiita](https://qiita.com/haruhikonyan/items/291e1e5413a827fc6d9a)  
+- [Dev Containers入門～Dev Containersってなんだ編～ \#VSCode \- Qiita](https://qiita.com/dagamun/items/e8e856f0ee6cf8a457e0)  
 - bandit  
 - rope  
+- GitHub actions  
 
 # Guide
 - Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
