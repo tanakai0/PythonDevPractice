@@ -25,12 +25,19 @@ dev-dependencies = [
     "ipykernel>=6.29.4",
 ]
 
+[tool.rye.scripts]
+fmt = { chain = ["ruff format ./pythondevpractice ./tests ./experiments"]}
+lint = { chain = [
+    "ruff check --fix ./pythondevpractice ./tests ./experiments",
+    "mypy ./pythondevpractice ./tests ./experiments"
+]}
+test = { chain = ["pytest ./tests"] }
+
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["pythondevpractice"]
-
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
@@ -129,4 +136,3 @@ docstring-code-format = true
 # This only has an effect when the `docstring-code-format` setting is
 # enabled.
 docstring-code-line-length = "dynamic"
-
