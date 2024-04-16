@@ -49,6 +49,7 @@ VSCode extensions and settings: .vscode
 - bandit  
 - rope  
 - GitHub actions  
+- Docker 内の改行コードの違いで git の差分が出てくる
 
 # Guide
 - Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
