@@ -29,11 +29,14 @@
 			]
 		}
 	},
+	// "mounts": [
+	// 	{
+	// 		"source": "${localEnv:HOME}/.config/git",
+	// 		"target": "/home/vscode/.config/git",
+	// 		"type": "bind"
+	// 	}
+	// ]
 	"mounts": [
-		{
-			"source": "${localEnv:HOME}/.config/git",
-			"target": "/home/vscode/.config/git",
-			"type": "bind"
-		}
+		"type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock"
 	]
 }
