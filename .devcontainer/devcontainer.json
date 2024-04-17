@@ -14,7 +14,7 @@
 	// 		"cudaVersion": 11.8
 	// 	}
 	// },
-	//"onCreateCommand": "rye sync",
+	"onCreateCommand": "rye config --set-bool behavior.use-uv=true && rye sync",
 	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 	"customizations": {
 		"vscode": {
@@ -28,12 +28,12 @@
 				"charliermarsh.ruff"
 			]
 		}
-	}
-	// "mounts": [
-	// 	{
-	// 		"source": "${localEnv:HOME}/.config/git",
-	// 		"target": "/home/vscode/.config/git",
-	// 		"type": "bind"
-	// 	}
-	// ]
+	},
+	"mounts": [
+		{
+			"source": "${localEnv:HOME}/.config/git",
+			"target": "/home/vscode/.config/git",
+			"type": "bind"
+		}
+	]
 }
