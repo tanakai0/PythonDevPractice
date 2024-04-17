@@ -115,6 +115,7 @@ VSCode extensions and settings: .vscode
 - [Docker 概要](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
 - [Docker Desktop: The \#1 Containerization Tool for Developers \| Docker](https://www.docker.com/products/docker-desktop/)
 - [Add local file mount to a container](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount)
+- [Windows環境でdevcontainerにほぼ引き篭れる構成を作った \#Docker \- Qiita](https://qiita.com/kitamin/items/1987c843b616500100bb)
 
 # Pytest
 - [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
