@@ -67,7 +67,6 @@ VSCode extensions and settings: .vscode
 - Mypy does not check .ipynb files. It is neither to check them during pre-commit.  
 - Initially, I thought using a /src/packagename structure would allow for mimicking the production package environment by using pip install -e or rye add packagename --path ./src/packagename. However, VSCode unexpectedly adds src/ to the PYTHONPATH, which results in direct references to src/packagename. Consequently, I decided to place the package directly under the project root at /packagename.   
 - Be aware that README.md uses trailing whitespace for line breaks. Depending on the editor settings, these trailing spaces might be automatically removed.  
-- When mounting local folders in a Docker container, mounts may be necessary depending on the local OS. You can use: "mounts": [{"source": "${localEnv:HOME}/.config/git", "target": "/home/vscode/.config/git", "type": "bind"}] onn Unix-like systems, and "mounts": ["type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock"] on Windows.  
 - When using Docker containers on a Windows system, be aware that the contents of the .venv directory may change. So use ```>>> rye sync``` first in each environment.  
 
 
