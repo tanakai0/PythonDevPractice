@@ -33,6 +33,7 @@ Container virtualization: Docker & DevContainer in VSCode
 - ms-azuretools.vscode-docker  
 - ms-vscode-remote.remote-containers  
 - streetsidesoftware.code-spell-checker  
+- github.vscode-github-actions  
 
 ## Folder hierarchy
 Package programs: /package_name  

@@ -12,6 +12,7 @@
         "streetsidesoftware.code-spell-checker",
         "charliermarsh.ruff",
         "ms-python.vscode-pylance",
+        "github.vscode-github-actions"
     ],
 
     // List of extensions which should not be recommended for users of this workspace.
