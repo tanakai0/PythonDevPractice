@@ -104,6 +104,7 @@ VSCode extensions and settings: .vscode
 
 ## Github Actions
 - [GitHub Actions を理解する \- GitHub Docs](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions)  
+- [【初心者向け】【入門】GitHub Actionsの書き方についてデバッグ設定、runs\-onやcheckoutなどの仕組みや構造も含めて徹底解説 \#Linux \- Qiita](https://qiita.com/shun198/items/14cdba2d8e58ab96cf95)  
 - [\`pre\-commit\`を\`Github Actions\`で実行する](https://zenn.dev/ikura1/articles/ea4031e5bacdb3023658)  
 
 ## project
