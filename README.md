@@ -7,7 +7,7 @@ Practice of Python development environment.
 1. ```>>> git clone [this url]```
 2. Install recommended extensions of VSCode (written in extensions.json)
 3. ```>>> rye sync```
-4. ```>>> rye run pre-commit install``` (If you use pre-commit)
+4. ```>>> rye run pre-commit install``` (if you use pre-commit)
 
 # Structure
 ## Methods
@@ -41,14 +41,9 @@ Scripts for analysis: /experiments
 VSCode extensions and settings: .vscode
 
 # To do
-- https://sogo.dev/posts/2023/11/rye-with-docker
-- https://zenn.dev/daifukuninja/articles/f2997585867f7b  
-- [【Rye \+ uv \+ Ruff】Docker で VS Code の Dev Container 上に快適な Python 環境を構築する](https://zenn.dev/dena/articles/rye_python_in_devcontainer)  
-- [VSCode と devcontainer で始める開発環境構築 \#Docker \- Qiita](https://qiita.com/haruhikonyan/items/291e1e5413a827fc6d9a)  
 - [Dev Containers入門～Dev Containersってなんだ編～ \#VSCode \- Qiita](https://qiita.com/dagamun/items/e8e856f0ee6cf8a457e0)  
 - bandit  
 - rope  
-- GitHub actions  
 - Docker 内の改行コードの違いで git の差分が出てくる
 
 # Guide
@@ -106,20 +101,30 @@ VSCode extensions and settings: .vscode
 - [pre-commit + Ruff](https://zenn.dev/nowa0402/articles/79aaeb8db5731c)
 - [pre\-commitでコミット時にコードの整形やチェックを行う](https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d)
 
+## Github Actions
+- [GitHub Actions を理解する \- GitHub Docs](https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions)  
+- [\`pre\-commit\`を\`Github Actions\`で実行する](https://zenn.dev/ikura1/articles/ea4031e5bacdb3023658)  
+
 ## project
 - [Python プロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)
 - [\[2023年最新版:rye対応\]Python案件で汎用的に使えるモダンなプロジェクトテンプレート](https://zenn.dev/tk_resilie/articles/python_my_best_project)  
+- [僕の考えた最強の Python 開発環境 \(2024\)](https://zenn.dev/koki_algebra/articles/cd3341bcba9272)  
 
 ## Docker
 - [Docker 概要](https://qiita.com/etaroid/items/b1024c7d200a75b992fc)
 - [Docker Desktop: The \#1 Containerization Tool for Developers \| Docker](https://www.docker.com/products/docker-desktop/)
 - [Add local file mount to a container](https://code.visualstudio.com/remote/advancedcontainers/add-local-file-mount)
-- [Windows環境でdevcontainerにほぼ引き篭れる構成を作った \#Docker \- Qiita](https://qiita.com/kitamin/items/1987c843b616500100bb)
+- [Windows環境でdevcontainerにほぼ引き篭れる構成を作った \#Docker \- Qiita](https://qiita.com/kitamin/items/1987c843b616500100bb)  
+- [VSCode と devcontainer で始める開発環境構築 \#Docker \- Qiita](https://qiita.com/haruhikonyan/items/291e1e5413a827fc6d9a)  
+- [【Rye \+ uv \+ Ruff】Docker で VS Code の Dev Container 上に快適な Python 環境を構築する](https://zenn.dev/dena/articles/rye_python_in_devcontainer)  
 
-# Pytest
+## Pytest
 - [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
 - [pytest ヘビー🐍ユーザーへの第一歩 \- エムスリーテックブログ](https://www.m3tech.blog/entry/pytest-summary)
 
-# Logging
+## mypy
+- [The mypy configuration file \- mypy 1\.9\.0 documentation](https://mypy.readthedocs.io/en/stable/config_file.html)
+
+## Logging
 - [Logging HOWTO — Python 3\.12\.3 documentation](https://docs.python.org/3/howto/logging.html)  
 - [logging入門 \#Python \- Qiita](https://qiita.com/knknkn1162/items/87b1153c212b27bd52b4)  
