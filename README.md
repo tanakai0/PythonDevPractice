@@ -11,19 +11,19 @@ Practice of Python development environment.
 
 # Structure
 ## Methods
-Version control system: Git  
-Source-code editor: VSCode  
-Language: Python  
-Package manager: Rye (uv) by Rust  
-Spell check: Code Spell Checker in VSCode  
-Logging: logging package in Python  
-Linter: Ruff  (CUI/VSCode)
-Formatter: Ruff  (CUI/VSCode)
-Type Checking: Pylance in VSCode, mypy in CUI  
-Python docstring style: Numpy style  
-Test process: pytest  
-Container virtualization: Docker & DevContainer in VSCode
-Continuous integration & deployment (CI/CD): pre-commit or GitHub Actions
+- Version control system: Git  
+- Source-code editor: VSCode  
+- Language: Python  
+- Package manager: Rye (uv) by Rust  
+- Spell check: Code Spell Checker in VSCode  
+- Logging: logging package in Python  
+- Linter: Ruff  (CUI/VSCode)  
+- Formatter: Ruff  (CUI/VSCode)  
+- Type Checking: Pylance in VSCode, mypy in CUI    
+- Python docstring style: Numpy style  
+- Test process: pytest  
+- Container virtualization: Docker & DevContainer in VSCode  
+- Continuous integration & deployment (CI/CD): pre-commit or GitHub Actions
 
 ### VSCode extensions
 - ms-python.python
@@ -42,10 +42,9 @@ Test programs: /tests
 Scripts for analysis: /experiments  
 VSCode extensions and settings: .vscode
 
-# Additional tools
+# Additional tools you might consider
 - bandit  
 - rope  
-- Docker 内の改行コードの違いで git の差分が出てくる
 
 # Guide
 - Activate a .venv: ```>>> .\.venv\Scripts\activate``` for Windows, and ```>>> source .venv/bin/activate``` for Unix-like OS 
@@ -54,7 +53,7 @@ VSCode extensions and settings: .vscode
 - Add a local dependency by Rye: ```>>> rye add packagename --path path/to/packagename```
 - Test a docstring by Pytest: ```>>> rye run pytest --doctest-modules```  
 - Store functions and test data used in tests as fixtures in tests/conftest.py. Fixtures defined in a conftest.py file can be used without import in files within the same or deeper directory levels.  
-- rye scripts is prepared in [tool.rye.scripts] in pyproject.html. ```>>> rye fmt```, ```>>> rye lint```, and ```>>> rye test``` can be used.
+- Rye scripts is prepared in [tool.rye.scripts] in pyproject.html. ```>>> rye fmt```, ```>>> rye lint```, and ```>>> rye test``` can be used.
 - Level in logging: DEBUG < INFO < WARNING < ERROR < CRITICAL
 
 # Troubleshooting
@@ -67,7 +66,7 @@ VSCode extensions and settings: .vscode
 - While most files will use LF for line endings, Windows-specific files such as .cmd and .bat scripts will retain CRLF. See .gitattributes.
 
 
-# Reference
+# Reference (mostly in Japanese)
 
 ## Git
 - [Setting up Git & Authenticating with GitHub from Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)

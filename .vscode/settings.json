@@ -1,7 +1,15 @@
 {
+    "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "[markdown]": {
+        // This needs to be false to represent newline with trailing spaces.
+        "files.trimTrailingWhitespace": false,
+    },
+    "[plaintext]": {
+        "editor.wordWrap": "bounded",
+        "files.trimTrailingWhitespace": false,
+    },
 
-    
     "extensions.ignoreRecommendations": false,
 
     "autoDocstring.docstringFormat": "numpy",
