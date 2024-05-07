@@ -11,19 +11,19 @@ Practice of Python development environment.
 
 # Structure
 ## Methods
-- Version control system: Git  
-- Source-code editor: VSCode  
-- Language: Python  
-- Package manager: Rye (uv) by Rust  
-- Spell check: Code Spell Checker in VSCode  
-- Logging: logging package in Python  
-- Linter: Ruff  (CUI/VSCode)  
-- Formatter: Ruff  (CUI/VSCode)  
-- Type Checking: Pylance in VSCode, mypy in CUI    
-- Python docstring style: Numpy style  
-- Test process: pytest  
-- Container virtualization: Docker & DevContainer in VSCode  
-- Continuous integration & deployment (CI/CD): pre-commit or GitHub Actions
+Version control system: Git / GitHub  
+Source-code editor: VSCode  
+Language: Python  
+Package manager: Rye (uv) by Rust  
+Spell check: Code Spell Checker in VSCode  
+Logging: logging package in Python  
+Linter: Ruff  (CUI/VSCode)  
+Formatter: Ruff  (CUI/VSCode)  
+Type Checking: Pylance in VSCode, mypy in CUI    
+Python docstring style: Numpy style  
+Test process: pytest  
+Container virtualization: Docker & DevContainer in VSCode  
+Continuous integration & deployment (CI/CD): pre-commit or GitHub Actions
 
 ### VSCode extensions
 - ms-python.python
