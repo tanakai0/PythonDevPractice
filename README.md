@@ -23,6 +23,7 @@ Type Checking: Pylance in VSCode, mypy in CUI
 Python docstring style: Numpy style  
 Test process: pytest  
 Container virtualization: Docker & DevContainer in VSCode
+Continuous integration & deployment (CI/CD): pre-commit or GitHub Actions
 
 ### VSCode extensions
 - ms-python.python
@@ -41,8 +42,7 @@ Test programs: /tests
 Scripts for analysis: /experiments  
 VSCode extensions and settings: .vscode
 
-# To do
-- [Dev Containers入門～Dev Containersってなんだ編～ \#VSCode \- Qiita](https://qiita.com/dagamun/items/e8e856f0ee6cf8a457e0)  
+# Additional tools
 - bandit  
 - rope  
 - Docker 内の改行コードの違いで git の差分が出てくる
@@ -64,6 +64,7 @@ VSCode extensions and settings: .vscode
 - Initially, I thought using a /src/packagename structure would allow for mimicking the production package environment by using pip install -e or rye add packagename --path ./src/packagename. However, VSCode unexpectedly adds src/ to the PYTHONPATH, which results in direct references to src/packagename. Consequently, I decided to place the package directly under the project root at /packagename.   
 - Be aware that README.md uses trailing whitespace for line breaks. Depending on the editor settings, these trailing spaces might be automatically removed.  
 - When using Docker containers on a Windows system, be aware that the contents of the .venv directory may change. So use ```>>> rye sync``` first in each environment.  
+- While most files will use LF for line endings, Windows-specific files such as .cmd and .bat scripts will retain CRLF. See .gitattributes.
 
 
 # Reference
@@ -71,6 +72,7 @@ VSCode extensions and settings: .vscode
 ## Git
 - [Setting up Git & Authenticating with GitHub from Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 - [Git まとめ](https://qiita.com/gold-kou/items/7f6a3b46e2781b0dd4a0)
+- [もう迷わない \.gitattributes で改行コードを統一 \#Git \- Qiita](https://qiita.com/Yossy_Hal/items/6fe2d14cddd6e16796d7)
 
 
 ## VSCode
@@ -119,6 +121,7 @@ VSCode extensions and settings: .vscode
 - [Windows環境でdevcontainerにほぼ引き篭れる構成を作った \#Docker \- Qiita](https://qiita.com/kitamin/items/1987c843b616500100bb)  
 - [VSCode と devcontainer で始める開発環境構築 \#Docker \- Qiita](https://qiita.com/haruhikonyan/items/291e1e5413a827fc6d9a)  
 - [【Rye \+ uv \+ Ruff】Docker で VS Code の Dev Container 上に快適な Python 環境を構築する](https://zenn.dev/dena/articles/rye_python_in_devcontainer)  
+- [Dev Containers入門～Dev Containersってなんだ編～ \#VSCode \- Qiita](https://qiita.com/dagamun/items/e8e856f0ee6cf8a457e0)  
 
 ## Pytest
 - [pytest: helps you write better programs — pytest documentation](https://docs.pytest.org/en/8.0.x/)
