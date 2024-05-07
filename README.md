@@ -3,11 +3,11 @@
 Practice of Python development environment.
 
 # Setup
-0. Install VSCode, Python, Rust, and Rye in that order. It is essential to install Rust before Rye. If Rye is installed before Rust on Windows, you should delete the Users/.rye folders.
-1. ```>>> git clone [this url]```
-2. Install recommended extensions of VSCode (written in extensions.json)
-3. ```>>> rye sync```
-4. ```>>> rye run pre-commit install``` (if you use pre-commit)
+0. Install VSCode, Python, Rust, and Rye in that order. If Rye becomes corrupted, you should delete the Users/.rye folders and reinstall.
+1. Clone this projects ```>>> git clone [this url]```.
+2. Install recommended extensions of VSCode (written in extensions.json).
+3. Synchronize the Python environment ```>>> rye sync```.
+4. If you use pre-commit, install it at the first time ```>>> rye run pre-commit install```.
 
 # Structure
 ## Methods
